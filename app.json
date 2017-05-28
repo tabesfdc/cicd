@@ -2,13 +2,14 @@
   "name": "delicious_recipes",
   "description": "CodeZine サンプルコード",
   "scripts": {
+    "postdeploy": "bundle exec rake db:migrate"
   },
   "env": {
   },
   "formation": {
   },
   "addons": [
-
+    "heroku-postgresql"
   ],
   "buildpacks": [
     {

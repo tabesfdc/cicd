@@ -1,6 +1,6 @@
 {
   "name": "delicious_recipes",
-  "description": "CodeZine サンプルコード",
+  "description": "CodeZine サンプルコード by T.Abe",
   "scripts": {
     "postdeploy": "bundle exec rake db:migrate"
   },

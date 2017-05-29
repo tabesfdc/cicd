@@ -2,7 +2,7 @@
   "name": "delicious_recipes",
   "description": "CodeZine サンプルコード by T.Abe",
   "scripts": {
-    "postdeploy": "bundle exec rake db:migrate"
+    "postdeploy": "rake db:migrate"
   },
   "env": {
   },

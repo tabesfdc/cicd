@@ -43,7 +43,7 @@ RSpec.describe AccountsController, type: :controller do
 
   describe "GET #index" do
     it "returns a success response" do
-      account = Account.create!(
+      Account.create!(
       firstname: 'Takashi',
       lastname:  'Abe',
       email:     'tabe@salesforce.com')

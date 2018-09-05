@@ -1,31 +1,53 @@
-<p id="notice"><%= notice %></p>
+<p id="notice">
+  <%= notice %>
+</p>
 
-<h1>Hello World!</h1>
+<p>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h2>Hello World!</h2>
+        </div>
+        <div class="panel-body">
+          <table class="table table-hover">
+            <tr class="active">
 
-<table class="bordered">
-  <thead>
-    <tr>
-      <th>Firstname</th>
-      <th>Lastname</th>
-      <th>Email</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+              <th colspan="3"></th>
+            </tr>
 
-  <tbody>
-    <% @accounts.each do |account| %>
-      <tr>
-        <td><%= account.firstname %></td>
-        <td><%= account.lastname %></td>
-        <td><%= account.email %></td>
-        <td><%= link_to 'Show', account %></td>
-        <td><%= link_to 'Edit', edit_account_path(account) %></td>
-        <td><%= link_to 'Destroy', account, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+            <% @accounts.each do |account| %>
+              <tr>
+                <td>
+                  <%= account.firstname %>
+                </td>
+                <td>
+                  <%= account.lastname %>
+                </td>
+                <td>
+                  <%= account.email %>
+                </td>
+                <td>
+                  <%= link_to 'Show', account %>
+                </td>
+                <td>
+                  <%= link_to 'Edit', edit_account_path(account) %>
+                </td>
+                <td>
+                  <%= link_to 'Destroy', account, method: :delete, data: { confirm: 'Are you sure?' } %>
+                </td>
+              </tr>
+              <% end %>
 
-<br>
-
-<%= link_to 'New Account', new_account_path %>
+          </table>
+          <%= link_to '新規追加', new_account_path %>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+  </div>
+</p>

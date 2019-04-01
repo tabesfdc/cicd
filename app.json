@@ -6,6 +6,11 @@
   },
   "env": {
   },
+  "environments": {
+    "test": {
+      "addons": ["heroku-postgresql:in-dyno"]
+    }
+  },
   "formation": {
   },
   "addons": [

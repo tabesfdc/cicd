@@ -25,7 +25,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'pg', '~> 0.3'
+gem 'pg', '~> 1.1'
 gem 'newrelic_rpm'
 
 group :development, :test do

@@ -17,9 +17,6 @@
       ],
       "scripts": {
         "test": "bundle exec rake knapsack_pro:rspec"
-      },
-      "env": {
-        "KNAPSACK_PRO_TEST_SUITE_TOKEN_RSPEC": "a80134aa5d0da81be1f1526585ea7882"
       }
     }
   },

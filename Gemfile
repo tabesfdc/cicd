@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby "2.6.2"
+ruby "2.6.3"
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -21,7 +21,6 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -31,6 +30,8 @@ gem 'newrelic_rpm'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # this gem package is Heroku beta add-on service for ci
+  gem 'knapsack_pro'
 end
 
 group :development do
